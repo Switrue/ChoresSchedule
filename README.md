@@ -10,9 +10,7 @@ ___
 
 An app that helps families organize household chores: it allows you to distribute tasks among family members, assess the actual workload for each person, and flexibly adjust the chore schedule. The program is designed to ensure that household tasks are handled fairly and without unnecessary arguments.
 
-___
-
-## Feature
+### Feature
 
 - Workload calculation – a clear overview of the tasks assigned to each participant.
 - Family member management – ​​a separate profile for each participant.
@@ -26,4 +24,10 @@ ___
 | Project | Platform | Framework |
 |---------|----------|-----------|
 | ChoresSchedule | .NET Framework 4.7.2, C# | WPF |
-| SetupChoresSchedule | --- | SetupProject |
+| SetupChoresSchedule | — | SetupProject |
+
+___
+
+<div align="right">
+  <em>BySwitrue · 2026</em>
+</div>
