@@ -12,7 +12,7 @@ An app that helps families organize household chores: it allows you to distribut
 
 ___
 
-## Feature
+### Feature
 
 - Workload calculation – a clear overview of the tasks assigned to each participant.
 - Family member management – ​​a separate profile for each participant.
