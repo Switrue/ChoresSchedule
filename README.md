@@ -26,4 +26,4 @@ ___
 | Project | Platform | Framework |
 |---------|----------|-----------|
 | ChoresSchedule | .NET Framework 4.7.2, C# | WPF |
-| SetupChoresSchedule | --- | SetupProject |
+| SetupChoresSchedule | — | SetupProject |
