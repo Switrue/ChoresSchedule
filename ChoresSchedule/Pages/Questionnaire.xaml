@@ -1,0 +1,82 @@
+﻿<Page x:Class="ChoresSchedule.Windows.Questionnaire"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ChoresSchedule.Windows"
+      mc:Ignorable="d" 
+      d:DesignHeight="630" d:DesignWidth="900"
+      Title="Questionnaire" Background="White">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <ScrollViewer Grid.Row="0" Margin="10" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled">
+            <StackPanel x:Name="cardsContainer" Orientation="Horizontal">
+                <!-- Карточки-->
+            </StackPanel>
+        </ScrollViewer>
+
+        <Border Grid.Row="1" Style="{StaticResource CustomBorder}" Height="10" Margin="15,0,15,0" VerticalAlignment="Top"/>
+
+        <StackPanel Grid.Row="1" Margin="20,10,20,0">
+            <TextBlock Text="Добавить члена семьи:" Style="{StaticResource TextBlockStyle}"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                
+                <WrapPanel Grid.Column="0">
+                    <Button Content="Мужской" 
+                            Click="AddCardButton_Click" 
+                            Style="{StaticResource ButtonCard}" 
+                            Margin="3"
+                            Width="84"/>
+
+                    <Button Content="Женский" 
+                            Click="AddCardButton_Click" 
+                            Style="{StaticResource ButtonCard}" 
+                            Margin="3"
+                            Width="84"/>
+                </WrapPanel>
+                <WrapPanel Grid.Column="1" HorizontalAlignment="Right">
+                    <CheckBox x:Name="DeveloperModeChB" 
+                              Checked="SwitchingMode_CheckedChanged" 
+                              Unchecked="SwitchingMode_CheckedChanged" 
+                              Style="{StaticResource CustomCheckBox}" 
+                              ToolTip="Режим разработчика"/>
+                    
+                    <Button Content="Узнать" 
+                            x:Name="infoBtn" 
+                            Click="PersonInfo_Click" 
+                            Style="{StaticResource ButtonCard}" 
+                            Margin="3"
+                            Width="84"/>
+
+                    <Button Content="Вернуться"  
+                            Click="BackToMenu"
+                            Grid.Column="1"
+                            Style="{StaticResource ButtonCard}" 
+                            Margin="3"
+                            HorizontalAlignment="Right"
+                            Width="84"/>
+
+                    <Button Content="Расчитать"  
+                            Click="NavigateToSchedule" 
+                            Style="{StaticResource ButtonCard}" 
+                            Margin="3"
+                            Width="84"/>
+                </WrapPanel>
+            </Grid>
+
+            <StackPanel Grid.Row="0" Style="{StaticResource StackPanelCard}">
+                <TextBlock Text="Ребенок" Style="{StaticResource TextBlockStyle}"/>
+                <CheckBox x:Name="isChildChB" Style="{StaticResource CustomCheckBox}"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>

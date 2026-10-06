@@ -1,0 +1,15 @@
+﻿<Window x:Class="ChoresSchedule.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChoresSchedule"
+        mc:Ignorable="d" MinHeight="510" MinWidth="350"
+        Icon="/Resources/logo.ico" WindowStartupLocation="CenterScreen"
+        Title="Семейный график" Height="690" Width="900">
+    <Grid>
+        <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto">
+            <Frame Name="MainFrame" NavigationUIVisibility="Hidden"></Frame>
+        </ScrollViewer>
+    </Grid>
+</Window>
