@@ -29,5 +29,5 @@ ___
 ___
 
 <div align="right">
-  <em>ByTrollka · 2026</em>
+  <em>BySwitrue · 2026</em>
 </div>
