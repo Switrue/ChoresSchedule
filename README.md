@@ -25,3 +25,9 @@ ___
 |---------|----------|-----------|
 | ChoresSchedule | .NET Framework 4.7.2, C# | WPF |
 | SetupChoresSchedule | — | SetupProject |
+
+___
+
+<div align="right">
+  <em>ByTrollka · 2026</em>
+</div>
