@@ -10,8 +10,6 @@ ___
 
 An app that helps families organize household chores: it allows you to distribute tasks among family members, assess the actual workload for each person, and flexibly adjust the chore schedule. The program is designed to ensure that household tasks are handled fairly and without unnecessary arguments.
 
-___
-
 ### Feature
 
 - Workload calculation – a clear overview of the tasks assigned to each participant.
